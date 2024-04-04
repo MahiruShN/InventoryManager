@@ -3,9 +3,7 @@ C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-wi
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\inventorymanager.runtimeconfig.json
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\inventorymanager.dll
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\inventorymanager.pdb
-C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.main.resources
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.UCAccountManager.resources
-C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.UCItemsManager.resources
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.csproj.GenerateResource.cache
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.AssemblyInfoInputs.cache
@@ -17,3 +15,15 @@ C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-wi
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.pdb
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.genruntimeconfig.cache
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\ref\inventorymanager.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.Properties.Resources.resources
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.FormLogin.resources
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.csproj.AssemblyReference.cache
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.csproj.CopyComplete
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.frmMainMenu.resources
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.UCProductsManager.resources

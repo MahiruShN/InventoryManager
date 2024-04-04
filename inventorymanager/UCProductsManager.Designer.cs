@@ -1,6 +1,6 @@
 ﻿namespace inventorymanager
 {
-    partial class UCItemsManager
+    partial class UCProductsManager
     {
         /// <summary> 
         /// Required designer variable.

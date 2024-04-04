@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace inventorymanager
 {
-    public partial class UCItemsManager : UserControl
+    public partial class UCProductsManager : UserControl
     {
-        public UCItemsManager()
+        public UCProductsManager()
         {
             InitializeComponent();
         }
