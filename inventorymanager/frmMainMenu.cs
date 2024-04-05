@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using ZXing;
+using ZXing.Mobile;
+using ZXing.QrCode;
 namespace inventorymanager
 {
     public partial class frmMainMenu : Form
@@ -63,6 +65,13 @@ namespace inventorymanager
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

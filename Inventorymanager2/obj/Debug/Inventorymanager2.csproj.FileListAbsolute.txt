@@ -1,0 +1,9 @@
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\bin\Debug\Inventorymanager2.exe.config
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\bin\Debug\Inventorymanager2.exe
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\bin\Debug\Inventorymanager2.pdb
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.csproj.AssemblyReference.cache
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.Properties.Resources.resources
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.csproj.GenerateResource.cache
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.csproj.CoreCompileInputs.cache
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.exe
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.pdb

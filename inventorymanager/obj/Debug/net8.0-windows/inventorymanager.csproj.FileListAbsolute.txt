@@ -27,3 +27,8 @@ C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-wi
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.csproj.CopyComplete
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.frmMainMenu.resources
 C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.UCProductsManager.resources
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\zxing.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\ZXing.Net.Mobile.Core.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\ZXingNetMobile.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\bin\Debug\net8.0-windows\zxing.portable.dll
+C:\Users\Quan\Desktop\code\InventoryManager\inventorymanager\obj\Debug\net8.0-windows\inventorymanager.frmAddAccount.resources

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64310113db2f4d48863f5f834ccad47b" Name="Diagram1">
+        <EntityTypeShape EntityType="Inventory050424Model.Customer" Width="1.5" PointX="6" PointY="8.5" />
+        <EntityTypeShape EntityType="Inventory050424Model.Input" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="Inventory050424Model.InputInfo" Width="1.5" PointX="5.25" PointY="4.125" />
+        <EntityTypeShape EntityType="Inventory050424Model.Object" Width="1.5" PointX="3" PointY="4.125" />
+        <EntityTypeShape EntityType="Inventory050424Model.Output" Width="1.5" PointX="6" PointY="1.125" />
+        <EntityTypeShape EntityType="Inventory050424Model.OutputInfo" Width="1.5" PointX="8.25" PointY="4.125" />
+        <EntityTypeShape EntityType="Inventory050424Model.Suplier" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="Inventory050424Model.sysdiagram" Width="1.5" PointX="0.75" PointY="8" />
+        <EntityTypeShape EntityType="Inventory050424Model.Unit" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="Inventory050424Model.UserRole" Width="1.5" PointX="8.75" PointY="8.5" />
+        <EntityTypeShape EntityType="Inventory050424Model.User" Width="1.5" PointX="11" PointY="8.25" />
+        <AssociationConnector Association="Inventory050424Model.FK__OutputInf__IdCus__4F7CD00D" />
+        <AssociationConnector Association="Inventory050424Model.FK__InputInfo__IdInp__4BAC3F29" />
+        <AssociationConnector Association="Inventory050424Model.FK__InputInfo__IdObj__4CA06362" />
+        <AssociationConnector Association="Inventory050424Model.FK__Object__IdSuplie__4D94879B" />
+        <AssociationConnector Association="Inventory050424Model.FK__Object__IdUnit__4E88ABD4" />
+        <AssociationConnector Association="Inventory050424Model.FK__OutputInf__IdObj__5070F446" />
+        <AssociationConnector Association="Inventory050424Model.FK__OutputInfo__Id__412EB0B6" />
+        <AssociationConnector Association="Inventory050424Model.FK__Users__IdRole__5165187F" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
