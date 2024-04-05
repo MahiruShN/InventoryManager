@@ -72,13 +72,17 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(264, 20);
             this.txbUserName.TabIndex = 3;
+            this.txbUserName.Text = "minhquan";
             // 
             // txbPassword
             // 
             this.txbPassword.Location = new System.Drawing.Point(44, 199);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '●';
             this.txbPassword.Size = new System.Drawing.Size(264, 20);
             this.txbPassword.TabIndex = 4;
+            this.txbPassword.Text = "Quan1704";
+            this.txbPassword.TextChanged += new System.EventHandler(this.txbPassword_TextChanged);
             // 
             // btnLogin
             // 

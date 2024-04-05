@@ -18,5 +18,12 @@ namespace Inventorymanager2
             InitializeComponent();
             dataGridView1.DataSource = DataProvider.Ins.DB.Users.ToList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAddAccount frmAddAccount = new frmAddAccount();
+            frmAddAccount.ShowDialog();
+            dataGridView1.Refresh();
+        }
     }
 }

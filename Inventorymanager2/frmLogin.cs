@@ -34,29 +34,7 @@ namespace Inventorymanager2
             Application.Exit();
         }
 
-        private static string ConvertToSha256(string text)
-        {
-            // Check if the text is null
-            if (text == null)
-            {
-                throw new ArgumentNullException(nameof(text));
-            }
-
-            // Create a SHA256   
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                // ComputeHash - returns byte array  
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(text));
-
-                // Convert byte array to a string   
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < bytes.Length; i++)
-                {
-                    builder.Append(bytes[i].ToString("x2"));
-                }
-                return builder.ToString();
-            }
-        }
+        
 
         private void login(string username, string password)
         {
@@ -88,8 +66,13 @@ namespace Inventorymanager2
         private void btnLogin_Click(object sender, EventArgs e)
         {
             String username = txbUserName.Text;
-            String password = ConvertToSha256(txbPassword.Text);
+            String password = AccountManager.ConvertToSha256(txbPassword.Text);
             login( username, password);
+        }
+
+        private void txbPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,3 +15,4 @@ C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventor
 C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.csproj.CopyComplete
 C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.frmMainMenu.resources
 C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.ucAccount.resources
+C:\Users\Quan\Desktop\code\InventoryManager\Inventorymanager2\obj\Debug\Inventorymanager2.frmAddAccount.resources
