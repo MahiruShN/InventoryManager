@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbUserName = new System.Windows.Forms.TextBox();
+            this.txbPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnExist = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -66,19 +66,19 @@
             this.label3.Text = "Mật khẩu";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // txbUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(44, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 20);
-            this.textBox1.TabIndex = 3;
+            this.txbUserName.Location = new System.Drawing.Point(44, 124);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(264, 20);
+            this.txbUserName.TabIndex = 3;
             // 
-            // textBox2
+            // txbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(44, 199);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(264, 20);
-            this.textBox2.TabIndex = 4;
+            this.txbPassword.Location = new System.Drawing.Point(44, 199);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Size = new System.Drawing.Size(264, 20);
+            this.txbPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
@@ -89,6 +89,7 @@
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnExist
             // 
@@ -107,8 +108,8 @@
             this.ClientSize = new System.Drawing.Size(355, 450);
             this.Controls.Add(this.btnExist);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbPassword);
+            this.Controls.Add(this.txbUserName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -124,8 +125,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbUserName;
+        private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExist;
     }
