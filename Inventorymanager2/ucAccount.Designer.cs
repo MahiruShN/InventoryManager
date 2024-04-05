@@ -30,75 +30,87 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnDelAcc = new System.Windows.Forms.Button();
+            this.btnEditAcc = new System.Windows.Forms.Button();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DisplayedName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 156);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Username,
+            this.DisplayedName,
+            this.Role});
+            this.dataGridView1.Location = new System.Drawing.Point(171, 40);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(734, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(544, 501);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(288, 502);
+            this.button1.Location = new System.Drawing.Point(16, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(136, 49);
             this.button1.TabIndex = 1;
             this.button1.Text = "Thêm tài khoản";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // btnDelAcc
             // 
-            this.textBox1.Location = new System.Drawing.Point(208, 350);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 2;
+            this.btnDelAcc.Location = new System.Drawing.Point(16, 122);
+            this.btnDelAcc.Name = "btnDelAcc";
+            this.btnDelAcc.Size = new System.Drawing.Size(136, 49);
+            this.btnDelAcc.TabIndex = 2;
+            this.btnDelAcc.Text = "Xóa tài khoản";
+            this.btnDelAcc.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // btnEditAcc
             // 
-            this.textBox2.Location = new System.Drawing.Point(208, 401);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 20);
-            this.textBox2.TabIndex = 3;
+            this.btnEditAcc.Location = new System.Drawing.Point(16, 204);
+            this.btnEditAcc.Name = "btnEditAcc";
+            this.btnEditAcc.Size = new System.Drawing.Size(136, 49);
+            this.btnEditAcc.TabIndex = 3;
+            this.btnEditAcc.Text = "Sửa tài khoản";
+            this.btnEditAcc.UseVisualStyleBackColor = true;
+            this.btnEditAcc.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox3
+            // Username
             // 
-            this.textBox3.Location = new System.Drawing.Point(208, 452);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 20);
-            this.textBox3.TabIndex = 4;
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            this.Username.ReadOnly = true;
+            this.Username.Width = 150;
             // 
-            // comboBox1
+            // DisplayedName
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(470, 451);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.DisplayedName.HeaderText = "Tên";
+            this.DisplayedName.Name = "DisplayedName";
+            this.DisplayedName.ReadOnly = true;
+            this.DisplayedName.Width = 250;
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Phân quyền";
+            this.Role.Name = "Role";
+            this.Role.ReadOnly = true;
             // 
             // ucAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnEditAcc);
+            this.Controls.Add(this.btnDelAcc);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "ucAccount";
             this.Size = new System.Drawing.Size(740, 569);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -106,9 +118,10 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnDelAcc;
+        private System.Windows.Forms.Button btnEditAcc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DisplayedName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Role;
     }
 }

@@ -35,23 +35,28 @@ namespace Inventorymanager2.Model
             }
         }
 
-        public static void AddAcount(String DisplayName,String Username, String Password, int roleid)
+        public static void AddAcount(String DisplayName, String Username, String Password, int roleid)
         {
-            
 
-                var newUser = new User();
-                
-                newUser.DisplayName = DisplayName;
-                newUser.UserName = Username;
-                newUser.Password = ConvertToSha256(Password);
-                newUser.IdRole = roleid;
-                newUser.UserRole = (UserRole)DataProvider.Ins.DB.UserRoles.FirstOrDefault(p => p.Id == roleid);
 
-                DataProvider.Ins.DB.Users.Add(newUser);
-                DataProvider.Ins.DB.SaveChanges();
-            
-                
+            var newUser = new User();
 
-        } 
+            newUser.DisplayName = DisplayName;
+            newUser.UserName = Username;
+            newUser.Password = ConvertToSha256(Password);
+            newUser.IdRole = roleid + 1;
+            newUser.UserRole = (UserRole)DataProvider.Ins.DB.UserRoles.FirstOrDefault(p => p.Id == roleid);
+
+            DataProvider.Ins.DB.Users.Add(newUser);
+            DataProvider.Ins.DB.SaveChanges();
+
+
+
+        }
+
+        public static void UpdateGridView()
+        {
+
+        }
     }
 }

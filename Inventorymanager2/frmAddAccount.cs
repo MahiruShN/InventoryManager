@@ -33,8 +33,9 @@ namespace Inventorymanager2
                 string DisplayName = txbDisplayname.Text;
                 string Username = txbUsername.Text;
                 string Password = txbPassword.Text;
-                int IdRole = int.Parse(cbRoles.Text);
+                int IdRole = cbRoles.SelectedIndex;
                 AccountManager.AddAcount(DisplayName, Username, Password, IdRole);
+                AccountManager.UpdateGridView();
                 MessageBox.Show("Thêm tài khoản thành công");
                 this.Close();
             }
@@ -47,9 +48,14 @@ namespace Inventorymanager2
 
         private void frmAddAccount_Load(object sender, EventArgs e)
         {
-            var UserIds = DataProvider.Ins.DB.UserRoles.Select(p => p.Id).ToList();
+            var UserIds = DataProvider.Ins.DB.UserRoles.Select(p => p.DisplayName).ToList();
             
             foreach (var User in UserIds) { cbRoles.Items.Add(User); }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
