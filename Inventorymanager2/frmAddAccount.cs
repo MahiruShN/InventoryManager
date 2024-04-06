@@ -35,12 +35,12 @@ namespace Inventorymanager2
                 string Password = txbPassword.Text;
                 int IdRole = cbRoles.SelectedIndex;
                 AccountManager.AddAcount(DisplayName, Username, Password, IdRole);
-                AccountManager.UpdateGridView();
+                
                 MessageBox.Show("Thêm tài khoản thành công");
                 this.Close();
             }
 
-            
+           
 
 
 

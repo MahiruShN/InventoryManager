@@ -28,27 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridViewAccoutList = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDelAcc = new System.Windows.Forms.Button();
             this.btnEditAcc = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DisplayedName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DisplayName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewAccoutList)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // gridViewAccoutList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridViewAccoutList.AllowUserToAddRows = false;
+            this.gridViewAccoutList.AllowUserToDeleteRows = false;
+            this.gridViewAccoutList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewAccoutList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Username,
-            this.DisplayedName,
+            this.DisplayName,
             this.Role});
-            this.dataGridView1.Location = new System.Drawing.Point(171, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(544, 501);
-            this.dataGridView1.TabIndex = 0;
+            this.gridViewAccoutList.Location = new System.Drawing.Point(171, 40);
+            this.gridViewAccoutList.Name = "gridViewAccoutList";
+            this.gridViewAccoutList.RowHeadersVisible = false;
+            this.gridViewAccoutList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.gridViewAccoutList.Size = new System.Drawing.Size(544, 501);
+            this.gridViewAccoutList.TabIndex = 0;
             // 
             // button1
             // 
@@ -79,6 +84,16 @@
             this.btnEditAcc.UseVisualStyleBackColor = true;
             this.btnEditAcc.Click += new System.EventHandler(this.button3_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(640, 11);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
+            this.btnRefresh.TabIndex = 4;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // Username
             // 
             this.Username.HeaderText = "Username";
@@ -86,42 +101,47 @@
             this.Username.ReadOnly = true;
             this.Username.Width = 150;
             // 
-            // DisplayedName
+            // DisplayName
             // 
-            this.DisplayedName.HeaderText = "Tên";
-            this.DisplayedName.Name = "DisplayedName";
-            this.DisplayedName.ReadOnly = true;
-            this.DisplayedName.Width = 250;
+            this.DisplayName.FillWeight = 150F;
+            this.DisplayName.HeaderText = "Tên";
+            this.DisplayName.Name = "DisplayName";
+            this.DisplayName.ReadOnly = true;
+            this.DisplayName.Width = 295;
             // 
             // Role
             // 
             this.Role.HeaderText = "Phân quyền";
             this.Role.Name = "Role";
             this.Role.ReadOnly = true;
+            this.Role.Width = 99;
             // 
             // ucAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnEditAcc);
             this.Controls.Add(this.btnDelAcc);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridViewAccoutList);
             this.Name = "ucAccount";
             this.Size = new System.Drawing.Size(740, 569);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.ucAccount_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewAccoutList)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridViewAccoutList;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelAcc;
         private System.Windows.Forms.Button btnEditAcc;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Username;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DisplayedName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DisplayName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Role;
     }
 }

@@ -34,9 +34,7 @@
             this.btnObject = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,21 +93,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(171, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 569);
             this.panel2.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Tra cứu tồn kho";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // frmMainMenu
             // 
@@ -122,7 +109,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMainMenu";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,6 +121,5 @@
         private System.Windows.Forms.Button btnInput;
         private System.Windows.Forms.Button btnObject;
         private System.Windows.Forms.Button btnAccount;
-        private System.Windows.Forms.Button button2;
     }
 }

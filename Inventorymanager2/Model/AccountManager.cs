@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Forms;
 
 namespace Inventorymanager2.Model
 {
@@ -54,8 +55,18 @@ namespace Inventorymanager2.Model
 
         }
 
-        public static void UpdateGridView()
+        public static void UpdateGridView(DataGridView grid)
         {
+
+            grid.DataSource = null;
+            var context = DataProvider.Ins.DB.Users.ToList();
+            foreach (var user in context)
+            {
+                int rowIndex = grid.Rows.Add();
+                grid.Rows[rowIndex].Cells["Username"].Value = user.UserName; // Replace "UsernameColumn" with the actual column name
+                grid.Rows[rowIndex].Cells["DisplayName"].Value = user.DisplayName; // Replace "FullNameColumn" with the actual column name
+                grid.Rows[rowIndex].Cells["Role"].Value = user.UserRole != null ? user.UserRole.DisplayName : "";
+            }
 
         }
     }

@@ -16,19 +16,30 @@ namespace Inventorymanager2
         public ucAccount()
         {
             InitializeComponent();
-            dataGridView1.DataSource = DataProvider.Ins.DB.Users.ToList();
+            gridViewAccoutList.DataSource = DataProvider.Ins.DB.Users.ToList();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             frmAddAccount frmAddAccount = new frmAddAccount();
             frmAddAccount.ShowDialog();
-            dataGridView1.Refresh();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ucAccount_Load(object sender, EventArgs e)
+        {
+            AccountManager.UpdateGridView(gridViewAccoutList);
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            gridViewAccoutList.Rows.Clear();
+            AccountManager.UpdateGridView(gridViewAccoutList);
         }
     }
 }
